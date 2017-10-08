@@ -6,8 +6,53 @@
   <meta charset="utf-8" />
   <title>Badge demo</title>
   <link rel="stylesheet" href="aria-badge.css" />
+  <style>
+    body {
+      max-width: 1000px;
+      margin: auto;
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 80px;
+    }
+
+    h4 {
+      text-align: left;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+    }
+
+    .btn {
+      display: block;
+      max-width: 300px;
+      text-align: center;
+      text-decoration: none;
+      background-color: #6216c9;
+      color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      border: 1px solid #510cad;
+      margin: 100px auto;
+    }
+
+    .btn:hover,
+    .btn:focus {
+      background-color: #510cad;
+    }
+
+    .btn:avtive {
+      background-color: #6216c9;
+    }
+  </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="../src/js/badge.js"></script>
+  <script src="aria-badge.js"></script>
   <script>
     $(document).ready(function() {
       $('#badge1').badge({
@@ -31,10 +76,13 @@
 </head>
 
 <body>
-
+  <h1>Aria badge demo</h1>
   <p class="badge" id="badge1"></p>
-  <button type="button" id="btn1" aria-controls="badge1">Click me</button>
-  <button type="button" id="btn2" aria-controls="badge1">Reset </button>
+  <button type="button" id="btn1" aria-controls="badge1">Increment</button>
+  <button type="button" id="btn2" aria-controls="badge1">Reset</button>
+
+  <a href="https://github.com/DavideTriso/aria-badge" class="btn">Check documentation</a>
+
 </body>
 
 </html>
