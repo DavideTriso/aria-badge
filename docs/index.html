@@ -1,36 +1,40 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta charset="utf-8" />
-    <title>Badge demo</title>
-    <link rel="stylesheet" href="badge.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="../src/js/badge.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#badge1').badge({
-                initialValue: 1,
-                hideWhenZero: false
-            });
+  <meta charset="utf-8" />
+  <title>Badge demo</title>
+  <link rel="stylesheet" href="aria-badge.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../src/js/badge.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#badge1').badge({
+        initialValue: 1,
+        hideWhenZero: false,
+        updatedClassRemoveAfter: 1000
+      });
 
-            var i = 0;
-            $('#btn1').click(function () {
-                i = i + 1;
-                $('#badge1').badge('update', i);
-            });
+      var i = 0;
+      $('#btn1').click(function() {
+        i = i + 1;
+        $('#badge1').badge('update', i);
+      });
 
-            $('#btn2').click(function () {
-                i = 0;
-                $('#badge1').badge('update', i);
-            });
-        });
-    </script>
+      $('#btn2').click(function() {
+        i = 0;
+        $('#badge1').badge('update', i);
+      });
+    });
+  </script>
 </head>
+
 <body>
 
-    <p class="badge" id="badge1"></p>
-    <button type="button" id="btn1" aria-controls="badge1">Click me</button>
-    <button type="button" id="btn2" aria-controls="badge1">Reset </button>
+  <p class="badge" id="badge1"></p>
+  <button type="button" id="btn1" aria-controls="badge1">Click me</button>
+  <button type="button" id="btn2" aria-controls="badge1">Reset </button>
 </body>
+
 </html>

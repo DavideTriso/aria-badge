@@ -1,0 +1,83 @@
+.badge {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.badge {
+  border-style: solid;
+}
+
+.badge {
+  color: #fff;
+}
+
+.badge {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.badge {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*
+.demo {
+    background-color: red;
+    @include mqMin(w4) {
+	    background-color: blue;
+	}
+}
+*/
+/*
+.demo {
+    background-color: red;
+    @include mqMax(w4) {
+	    background-color: blue;
+	}
+}
+*/
+/*
+.demo {
+    background-color: red;
+    @include mqRange(w2, w4) {
+	    background-color: blue;
+	}
+}
+*/
+.badge {
+  font-size: 0.75rem;
+}
+
+/*
+@include generateResponsiveGutter($guttersBreakpointsMap, $smallGuttersList, $containerClassName, $rowClassName, $columnClassName, $smallGutterModifierName);
+@include generateResponsiveGutter($guttersBreakpointsMap, $largeGuttersList, $containerClassName, $rowClassName, $columnClassName, $largeGutterModifierName);*/
+.badge {
+  background-color: #3c67d6;
+  border-color: #3460d4;
+  border-radius: 1rem;
+  border-width: 0.05rem;
+  height: 1rem;
+  min-width: 1rem;
+  padding: 0.1rem;
+}
+
+.badge_updated {
+  -webkit-animation: pulse 0.5s ease-out 2;
+          animation: pulse 0.5s ease-out 2;
+}
+
+@-webkit-keyframes pulse {
+  50% {
+    background-color: #1aa0cb;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    background-color: #1aa0cb;
+  }
+}

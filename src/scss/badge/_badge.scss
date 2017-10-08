@@ -1,0 +1,17 @@
+//-----------------
+//BLOCK
+//-----------------
+
+.badge {
+  @extend %align-items-center;
+  @extend %justify-content-center;
+  background-color: #3c67d6;
+  @include border(darken(#3c67d6, 2%), 1rem, 0.05rem);
+  @extend %border-style-solid;
+  @extend %color-white;
+  @extend %display-inline-flex;
+  @extend %r-fs_3;
+  height: 1rem;
+  min-width: 1rem;
+  padding: 0.1rem;
+}

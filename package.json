@@ -1,9 +1,11 @@
 {
-  "name": "badge",
+  "name": "t-aria-badge",
   "license": "MIT",
+  "version": "1.0.0",
+  "description": "HTML, CSS and JS badge UI-component for scalable projects",
   "repository": {
     "type": "git",
-    "url": "git://github.com/davidetriso/badge.git"
+    "url": "git://github.com/davidetriso/aria-badge.git"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
@@ -16,5 +18,7 @@
     "gulp-uglify": "^3.0.0",
     "require-dir": "^0.3.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "t-css-framework": "^v0.2.4"
+  }
 }

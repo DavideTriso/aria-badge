@@ -2,11 +2,14 @@
 
 ## About
 
-simple jQuery plugin for badges. [Go to demo page](https://davidetriso.github.io/badge/).
+HTML, CSS and JS badge UI-component for scalable projects. [Go to demo page](https://davidetriso.github.io/badge/) or [check on npm](https://www.npmjs.com/package/t-aria-badge).
 
+* Developed following BEM methodology
 * User-friendly and accessible
-* Less than 2KB (minified).
-* Compatible with amd and require.js
+* Less than 2KB JS (minified)
+* JS plugin runs in strict mode
+* Compatible with UMD
+
 
 ## Dependencies
 
@@ -41,7 +44,7 @@ Use following HTML markup to implement a badge:
 <span class="badge"></span>
 ```
 
-**IMPORTANT**:  If a region of the page is responsible for the update of the badge, it is necessary to expose the relationship between the badge and the page region with the `aria-controls` attribute for accessibility. 
+**IMPORTANT**:  If a region of the page is responsible for the update of the badge, it is necessary to expose the relation between the badge and the page region with the `aria-controls` attribute for accessibility.
 
 ### JS: Initialise
 
@@ -72,7 +75,7 @@ This plugin triggers following events:
 
 * **badge.initialised** after the badge is initialised.
 * **badge.updated** when the badge is updated.
-* 
+*
 
 The custom events are triggered on window and return the badge data object as argument.
 
