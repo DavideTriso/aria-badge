@@ -2,7 +2,7 @@
 
 ## About
 
-HTML, CSS and JS badge UI-component for scalable projects. [Go to demo page](https://davidetriso.github.io/badge/) or [check on npm](https://www.npmjs.com/package/t-aria-badge).
+HTML, CSS and JS badge UI-component for scalable projects. [Go to demo page](https://davidetriso.github.io/aria-badge/) or [check on npm](https://www.npmjs.com/package/t-aria-badge).
 
 * Developed following BEM methodology
 * User-friendly and accessible
@@ -29,6 +29,16 @@ aLabel | You have {X} notifications | string | The accessible label for the badg
 useTitle | true | bool | Use the accessible label also as title attribute.
 initialValue | 0 | string or int | Initial value of the badge.
 hideWhenZero | false | bool | When true the badge will be hidden by adding the `hiddenClass` and setting `aria-hidden="true"` when the badge's value is 0, null, undefined or false.
+
+## Installation
+
+Download the package from **GitHub** and get the compiled files from the `dist` folder.
+
+The plugin is also available on **npm**:
+```
+npm install t-aria-badge
+```
+
 
 ## Usage
 
