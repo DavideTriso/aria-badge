@@ -1,0 +1,34 @@
+//BLOCK
+$badge--flexPositioning: (
+  alignItems    : center,
+  justifyContent: center
+)
+!default;
+$badge--background: (
+  backgroundColor: #3c67d6
+)
+!default;
+$badge--border: (
+  borderStyle : solid,
+  borderColor : darken(#3c67d6, 2%),
+  borderWidth : 0.05rem,
+  borderRadius: 1rem
+)
+!default;
+$badge--text: (
+  color: #fff
+)
+!default;
+$badge--sizes: (
+  height  : 1rem,
+  minWidth: 1rem
+)
+!default;
+$badge--padding: (
+  all: 0.2rem,
+)
+!default;
+$badge--font: (
+  fontSize: 0.9rem
+)
+!default;

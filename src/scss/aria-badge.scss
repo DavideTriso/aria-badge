@@ -1,8 +1,7 @@
-@import '../../node_modules/t-css-framework/settings/import';
-@import '../../node_modules/t-css-framework/functions/import';
-@import '../../node_modules/t-css-framework/css-placeholders/import';
-@import '../../node_modules/t-css-framework/responsive-helpers/import';
-@import '../../node_modules/t-css-framework/ui-helpers/import';
-@import '../../node_modules/t-css-framework/grid/import';
+@import "../../node_modules/t-css-framework/src/settings/settings.import";
+@import "../../node_modules/t-css-framework/src/functions/functions.import";
+@import "../../node_modules/t-css-framework/src/helpers/helpers.import";
+
+@import "badge/badge.variables";
 @import "badge/badge";
-@import "badge/badge_modifiers";
+@import "badge/modifiers/badge_updated";
